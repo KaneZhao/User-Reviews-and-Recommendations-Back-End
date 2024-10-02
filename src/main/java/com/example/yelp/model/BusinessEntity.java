@@ -7,11 +7,9 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.Map;
 
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
-
 
 @Document(collection = "business")
 @Data
@@ -20,12 +18,12 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class BusinessEntity {
     @Id
     private String id;
-    
+
     @Field("business_id")
     private String businessId;
 
     private String name;
-    
+
     @Field("full_address")
     private String address;
 
@@ -38,7 +36,7 @@ public class BusinessEntity {
     private double longitude;
 
     private double stars;
-    
+
     @Field("review_count")
     private int reviewCount;
 

@@ -13,7 +13,7 @@ public class BusinessService {
 
     @Autowired
     private BusinessRepository repository;
-    
+
     public Optional<BusinessEntity> findBusinessByBusinessId(String id) {
         return repository.findBusinessByBusinessId(id);
     }
